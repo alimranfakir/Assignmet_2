@@ -20,7 +20,7 @@ public class PopularMovieResponse implements Serializable
     @SerializedName("total_results")
     @Expose
     private long totalResults;
-    private final static long serialVersionUID = -6657981303922657370L;
+    private final static long serialVersionUID = -2492412912802784251L;
 
     public long getPage() {
         return page;

@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         rv.setAdapter(new MyAdapter());
 
         try {
-            String data = run("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&page=1&api_key=3fa9058382669f72dcb18fb405b7a831&language=en-US");
+            String data = run("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&page=1&api_key=3fa9058382669f72dcb18fb405b7a831&gt");
             movieResponse = new  Gson().fromJson(data, PopularMovieResponse.class);
         } catch (IOException e) {
             e.printStackTrace();
